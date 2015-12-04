@@ -43,7 +43,7 @@ namespace CorreoServicio
                         correo.Attachments.Add(attach);
                     }
                 }
-                SmtpClient cliente = new SmtpClient("smtp.mail.yahoo.com");
+                SmtpClient cliente = new SmtpClient("smtp.mail.yahoo.com"); 
                 cliente.EnableSsl = true;
                 cliente.Port = 587; // o 465
                 cliente.Credentials = new System.Net.NetworkCredential(pCuenta.Direccion, pCuenta.Contraseña);
