@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorreoServicio", "CorreoSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\Excepciones.csproj", "{F8C24114-AB11-4794-B53F-0205888A1CB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{BA2900CE-BB88-43FB-8A27-48F6FC04C5C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F8C24114-AB11-4794-B53F-0205888A1CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8C24114-AB11-4794-B53F-0205888A1CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8C24114-AB11-4794-B53F-0205888A1CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2900CE-BB88-43FB-8A27-48F6FC04C5C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2900CE-BB88-43FB-8A27-48F6FC04C5C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2900CE-BB88-43FB-8A27-48F6FC04C5C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2900CE-BB88-43FB-8A27-48F6FC04C5C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
