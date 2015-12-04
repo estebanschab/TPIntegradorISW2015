@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FabricaServicios.cs" />
+    <Compile Include="Mailtrap.cs" />
     <Compile Include="Gmail.cs" />
     <Compile Include="IServicioCorreo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

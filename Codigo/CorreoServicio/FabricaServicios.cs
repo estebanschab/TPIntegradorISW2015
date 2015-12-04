@@ -31,10 +31,12 @@ namespace CorreoServicio
                 this.iServicios = new Dictionary<string, IServicioCorreo>();
 
                 Gmail servicioGmail = new Gmail();
-                Yahoo servicioYahoo = new Yahoo();
+                Yahoo servicioYahoo = new Yahoo(); 
+                Mailtrap servicioMailtrap = new Mailtrap();
 
                 this.iServicios.Add("Gmail", servicioGmail);
                 this.iServicios.Add("Yahoo", servicioYahoo);
+                this.iServicios.Add("Mailtrap", servicioMailtrap);
             }
 
         /// <summary>

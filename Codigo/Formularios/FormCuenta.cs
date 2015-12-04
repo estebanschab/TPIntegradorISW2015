@@ -159,6 +159,7 @@ namespace Formularios
             listaServicios.Items.Add("Seleccione un servicio");
             listaServicios.Items.Add("Gmail");
             listaServicios.Items.Add("Yahoo");
+            listaServicios.Items.Add("Mailtrap");
             // Marca como seleccionada a la opción Seleccione un servicio.
             listaServicios.SelectedIndex = 0;
         }
