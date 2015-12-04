@@ -29,34 +29,34 @@ namespace Tests
             iAccountDTO = new CuentaDTO()
             {
                 Id = 1,
-                Direccion = "mati.d@gmail.com",
-                Contraseña = "sarasa",
-                Nombre = "Mati",
+                Direccion = "pedroperez@gmail.com",
+                Contraseña = "1234abc",
+                Nombre = "Pedro",
                 Servicio = "gmail"
             };
             //Se crea un correo de prueba
             iMailDTO = new CorreoDTO()
             {
-                Asunto = "Mocking",
-                CuentaDestino = "matiadr@gmail.com",
-                CuentaOrigen = "mati.d@gmail.com",
+                Asunto = "Prueba de Mocking",
+                CuentaDestino = "jose@gmail.com",
+                CuentaOrigen = "pedroperez@gmail.com",
                 Texto = "Esto es una prueba mocking"
             };
             //Se genera la primer lista de correos
             iListMails1.Add(new CorreoDTO
             {
                 Id = 1,
-                Asunto = "Correo 1",
-                CuentaDestino = "ingenieriadesoftware@gmail.com",
-                CuentaOrigen = "idsoftware@gmail.com",
+                Asunto = "Primer Correo",
+                CuentaDestino = "anamaria@gmail.com",
+                CuentaOrigen = "carmendolores@gmail.com",
                 Texto = "Nuevo correo"
             });
             iListMails1.Add(new CorreoDTO
             {
                 Id = 2,
-                Asunto = "Correo 2",
-                CuentaDestino = "ingenieriadesoftware@gmail.com",
-                CuentaOrigen = "idsoftware@gmail.com",
+                Asunto = "Segundo Correo",
+                CuentaDestino = "jose@gmail.com",
+                CuentaOrigen = "pedrogarcia@gmail.com",
                 Texto = "Nuevo correo"
             });
 
@@ -64,17 +64,17 @@ namespace Tests
             iListMails2.Add(new CorreoDTO
             {
                 Id = 4,
-                Asunto = "Correo 4",
-                CuentaDestino = "idsoftware@gmail.com",
-                CuentaOrigen = "ingenieriadesoftware@gmail.com",
+                Asunto = "Correo 1 Lista 2",
+                CuentaDestino = "carmen@gmail.com",
+                CuentaOrigen = "pedro@gmail.com",
                 Texto = "Nuevo correo"
             });
             iListMails2.Add(new CorreoDTO
             {
                 Id = 5,
-                Asunto = "Correo 5",
-                CuentaDestino = "idsoftware@gmail.com",
-                CuentaOrigen = "ingenieriadesoftware@gmail.com",
+                Asunto = "Correo 2 Lista 2",
+                CuentaDestino = "jose@gmail.com",
+                CuentaOrigen = "alejandro@gmail.com",
                 Texto = "Nuevo correo"
             });
         }
@@ -105,7 +105,7 @@ namespace Tests
 
             Mock<IServicioCorreo> mMockMailSvc = new Mock<IServicioCorreo>();
             //Se prepara el mock
-            mMockMailSvc.When(() => this.iMailDTO.CuentaDestino.Equals("matiadr@gmail.com")).Setup(x => x.EnviarCorreo(this.iMailDTO, this.iAccountDTO)).Throws<Exception>();
+            mMockMailSvc.When(() => this.iMailDTO.CuentaDestino.Equals("jose@gmail.com")).Setup(x => x.EnviarCorreo(this.iMailDTO, this.iAccountDTO)).Throws<Exception>();
             
             IServicioCorreo mMailSvc = mMockMailSvc.Object;
             mMailSvc.EnviarCorreo(this.iMailDTO, this.iAccountDTO);
